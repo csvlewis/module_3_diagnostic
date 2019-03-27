@@ -16,7 +16,7 @@ describe SearchFacade do
         expect(facade.stations[0].name).to be_a(String)
         expect(facade.stations[0].address).to be_a(String)
         expect(facade.stations[0].fuel_type).to be_a(String)
-        expect(facade.stations[0].distance).to be_a(String)
+        expect(facade.stations[0].distance).to be_a(Float)
         expect(facade.stations[0].access_times).to be_a(String)
       end
     end
