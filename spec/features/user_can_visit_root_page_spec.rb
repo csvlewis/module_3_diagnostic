@@ -25,7 +25,6 @@ feature "User can visit root page" do
     # And the stations should only be public, and not private, planned or temporarily unavailable.
     # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
 
-    # https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?limit=15&api_key=PbA3aOUG99pMY2qNifnyF9PIgXMQo6uKuNIXbK0v&location=80206&fuel_type=ELEC,LPG&access=public
     expect(page).to have_content('Name: PUBLIC STATIONS')
     expect(page).to have_content('Address: 2951-2985 E 3rd Ave')
     expect(page).to have_content('Fuel Type: Electric')
