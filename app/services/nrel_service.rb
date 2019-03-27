@@ -1,6 +1,6 @@
 class NRELService
   def get_stations(zip)
-    get_json('api/alt-fuel-stations/v1/nearest.json', zip)
+    get_json('api/alt-fuel-stations/v1/nearest.json', zip)[:fuel_stations]
   end
 
   def get_json(url, zip)
