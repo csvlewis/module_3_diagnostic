@@ -29,7 +29,7 @@ feature "User can visit root page" do
     expect(page).to have_content('Name: PUBLIC STATIONS')
     expect(page).to have_content('Address: 2951-2985 E 3rd Ave')
     expect(page).to have_content('Fuel Type: Electric')
-    expect(page).to have_content('Distance: PUBLIC STATIONS')
+    expect(page).to have_content('Distance: 0.62888 miles')
     expect(page).to have_content('Access Times: 24 hours daily')
   end
 end
