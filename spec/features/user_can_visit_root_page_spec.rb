@@ -9,11 +9,9 @@ feature "User can visit root page" do
     end
   end
 
-  scenario 'and search for stations' do
-
+  scenario 'and search for stations by zip code' do
     visit '/'
     fill_in 'q', with: 80206
-
     click_button 'Locate'
 
     expect(current_path).to eq('/search')
